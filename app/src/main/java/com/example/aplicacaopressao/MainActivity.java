@@ -1,5 +1,6 @@
 package com.example.aplicacaopressao;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,22 +15,33 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    EditText editText;
+    EditText editText[] = new EditText[2];
     TextView textView;
     Button buttonTest;
+    int value1;
+    int value2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         textView = (TextView) findViewById(R.id.textView);
-        editText = (EditText) findViewById(R.id.editTextNumber);
+        editText[0] = (EditText) findViewById(R.id.editTextNumber);
+        editText[1] = (EditText) findViewById(R.id.editTextNumber2);
         buttonTest = (Button) findViewById(R.id.button);
-
         buttonTest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println(editText.getText().toString());
+//                System.out.println();
+//                System.out.println();
+                value1 = Integer.parseInt(editText[0].getText().toString());
+                value2 = Integer.parseInt(editText[1].getText().toString());
+                if(value1 < 90 && value2 < 60 ){
+                    Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                    startActivity(intent);
+                }
+
+
                 //editText.setText(String.valueOf(999));
                 //Log.v("EditText",editText.getText().toString());
             }
