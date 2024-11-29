@@ -2,7 +2,6 @@ package com.example.aplicacaopressao;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
     EditText editText[] = new EditText[2];
     TextView textView;
     Button buttonTest;
-    int value1;
-    int value2;
+    private int value1;
+    private int value2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +36,11 @@ public class MainActivity extends AppCompatActivity {
                 value1 = Integer.parseInt(editText[0].getText().toString());
                 value2 = Integer.parseInt(editText[1].getText().toString());
                 if(value1 < 90 && value2 < 60 ){
-                    Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                    Intent intent = new Intent(MainActivity.this, LowPressureActivity.class);
+                    startActivity(intent);
+                }
+                else if(value1 < 120 && value2 < 80){
+                    Intent intent = new Intent(MainActivity.this, NormalPressureActivity.class);
                     startActivity(intent);
                 }
 
