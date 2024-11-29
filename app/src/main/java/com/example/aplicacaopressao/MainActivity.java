@@ -43,6 +43,10 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this, NormalPressureActivity.class);
                     startActivity(intent);
                 }
+                else if((value1 >= 120 && value1 < 140) || (value2 >=80 && value2 <90) ){
+                    Intent intent = new Intent(MainActivity.this, PreHypertensiveActivity.class);
+                    startActivity(intent);
+                }
 
 
                 //editText.setText(String.valueOf(999));

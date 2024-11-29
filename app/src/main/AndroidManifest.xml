@@ -23,6 +23,7 @@
         </activity>
         <activity android:name=".LowPressureActivity"/>
         <activity android:name=".NormalPressureActivity"/>
+        <activity android:name=".PreHypertensiveActivity"/>
     </application>
 
 </manifest>
