@@ -47,7 +47,18 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this, PreHypertensiveActivity.class);
                     startActivity(intent);
                 }
-
+                else if((value1 >= 140 && value1 < 160) || (value2 >= 90 && value2 < 100)){
+                    Intent intent = new Intent(MainActivity.this, Stage1Activity.class);
+                    startActivity(intent);
+                }
+                else if((value1 >= 160 && value1 < 181) || (value2 >=100 && value2 <111)){
+                    Intent intent = new Intent(MainActivity.this, Stage2Activity.class);
+                    startActivity(intent);
+                }
+                else if(value1 > 180 || value2 > 110){
+                    Intent intent = new Intent(MainActivity.this, LastStageActivity.class);
+                    startActivity(intent);
+                }
 
                 //editText.setText(String.valueOf(999));
                 //Log.v("EditText",editText.getText().toString());

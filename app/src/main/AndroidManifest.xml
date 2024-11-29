@@ -24,6 +24,9 @@
         <activity android:name=".LowPressureActivity"/>
         <activity android:name=".NormalPressureActivity"/>
         <activity android:name=".PreHypertensiveActivity"/>
+        <activity android:name=".Stage1Activity"/>
+        <activity android:name=".Stage2Activity"/>
+        <activity android:name=".LastStageActivity"/>
     </application>
 
 </manifest>
