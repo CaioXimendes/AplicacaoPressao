@@ -6,15 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    android:backgroundTint="#FFFFFF"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
         android:text="MEDIDOR DE PRESSÃO"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/editTextNumber"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,8 +40,10 @@
         android:layout_marginTop="123dp"
         android:layout_marginBottom="122dp"
         android:ems="10"
+        android:fontFamily="sans-serif-black"
         android:inputType="number"
         android:text="digite o valor 1"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/editTextNumber2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,8 +55,10 @@
         android:layout_height="48dp"
         android:layout_marginTop="300dp"
         android:ems="10"
+        android:fontFamily="sans-serif-black"
         android:inputType="number"
         android:text="digite o valor 2"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
