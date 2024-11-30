@@ -10,11 +10,14 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="252dp"
-        android:layout_height="131dp"
+        android:layout_width="222dp"
+        android:layout_height="51dp"
         android:layout_marginTop="185dp"
         android:layout_marginBottom="260dp"
-        android:text="Sua pressão esta em Pré-Hipertensão"
+        android:fontFamily="sans-serif-black"
+        android:text="Sua pressão está em Pré-Hipertensão"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="@+id/button4"
         app:layout_constraintTop_toTopOf="parent" />

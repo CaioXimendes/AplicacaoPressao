@@ -10,11 +10,14 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="252dp"
-        android:layout_height="131dp"
+        android:layout_width="229dp"
+        android:layout_height="82dp"
         android:layout_marginTop="185dp"
         android:layout_marginBottom="260dp"
+        android:fontFamily="sans-serif-black"
         android:text="Sua pressão arterial está elevada - Hipertensão estágio 2"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="@+id/button6"
         app:layout_constraintTop_toTopOf="parent" />

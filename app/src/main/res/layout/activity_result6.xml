@@ -10,11 +10,15 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="252dp"
-        android:layout_height="131dp"
+        android:layout_width="259dp"
+        android:layout_height="98dp"
         android:layout_marginTop="185dp"
         android:layout_marginBottom="260dp"
-        android:text="Crise Hipertensiva, procure emergencia médica imediata!"
+        android:fontFamily="sans-serif-black"
+        android:text="Crise Hipertensiva, procure emergência médica imediata!"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button7"
         app:layout_constraintEnd_toEndOf="@+id/button7"
         app:layout_constraintTop_toTopOf="parent" />

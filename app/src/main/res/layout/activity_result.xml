@@ -16,7 +16,10 @@
         android:layout_marginBottom="260dp"
         android:background="#FFFFFF"
         android:backgroundTint="#FFEB3B"
-        android:text="Sua pressão esta baixa"
+        android:fontFamily="sans-serif-black"
+        android:text="Sua pressão está baixa"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="@+id/button2"
         app:layout_constraintTop_toTopOf="parent" />

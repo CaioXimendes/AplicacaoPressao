@@ -11,15 +11,17 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="52dp"
-        android:text="MEDIDOR DE PRESSÃO"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="AVALIADOR DE PRESSÃO ARTERIAL"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="17sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -42,7 +44,7 @@
         android:ems="10"
         android:fontFamily="sans-serif-black"
         android:inputType="number"
-        android:text="digite o valor 1"
+        android:text="digite o valor 1(SIS)"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/editTextNumber2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,7 +59,7 @@
         android:ems="10"
         android:fontFamily="sans-serif-black"
         android:inputType="number"
-        android:text="digite o valor 2"
+        android:text="digite o valor 2(DIA)"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
