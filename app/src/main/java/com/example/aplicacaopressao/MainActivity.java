@@ -2,6 +2,7 @@ package com.example.aplicacaopressao;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -62,6 +63,21 @@ public class MainActivity extends AppCompatActivity {
 
                 //editText.setText(String.valueOf(999));
                 //Log.v("EditText",editText.getText().toString());
+            }
+        });
+        //this part of the code will be changed later, i already know about acessibility issues
+        editText[0].setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                editText[0].setText("");
+                return false;
+            }
+        });
+        editText[1].setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                editText[1].setText("");
+                return false;
             }
         });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
